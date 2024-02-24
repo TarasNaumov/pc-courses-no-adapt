@@ -1,0 +1,191 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background-color: #000
+
+header
+  position: relative
+  background: url('../img/header_bg.jpg') no-repeat
+  background-size: cover
+  height: 100vh
+
+.header-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 40px 80px
+
+  ul
+    display: flex
+    justify-content: space-between
+    align-items: center
+    list-style: none
+    width: 745px
+
+    a
+      position: relative
+
+    a:before
+      content: ''
+      position: absolute
+      bottom: -8px
+      left: 0
+      width: 0%
+      transition: 0.3s
+      height: 3px
+      background-color: #fff
+
+    a:hover:before
+      width: 100%
+
+  a
+    font-size: 16px
+    line-height: 24px
+    color: #fff
+    text-decoration: none
+    font-weight: 400
+    font-family: "Roboto"
+    text-align: center
+
+  .login-button
+    a
+      padding: 12px 30px
+      border-radius: 22px
+      background-image: linear-gradient(107deg, #c89afc 0%, #7c6afa 100%)
+      transition: 0.3s
+    a:hover 
+      box-shadow: 0px 0px 31px 3px rgba(124,106,250,1)
+
+.header-info
+  position: absolute
+  top: 50%
+  left: 315px
+  transform: translateY(-50%)
+  h1
+    font-size: 64px
+    line-height: 90px
+    color: #fff
+    font-weight: 700
+    font-family: "Roboto"
+    margin-bottom: 57px
+  .time
+    display: flex
+    column-gap: 30px
+    div
+      padding: 30px 30px 23px
+      background-color: #121212
+      text-align: center
+      p
+        font-size: 36px
+        line-height: 50px
+        color: #fff
+        font-weight: 700
+        font-family: "Roboto"
+        span
+          display: block
+          font-size: 16px
+          line-height: 22px
+          opacity: 0.400
+          color: #fff
+          font-weight: 400
+          font-family: "Roboto"
+
+.header-bottom-line
+  width: 100%
+  position: absolute
+  bottom: 0
+  left: 0
+  padding: 40px
+  background-color: #121212
+  .header-wrapper
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+
+
+.header-wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 1300px
+  margin: auto
+
+  .button
+    width: 15%
+    display: flex
+    align-items: center
+    a
+      font-size: 16px
+      line-height: 24px
+      color: #fff
+      font-weight: 700
+      font-family: "Roboto"
+      padding: 12px 30px
+      border-radius: 22px
+      background-image: linear-gradient(108deg, #df5950 0%, #451046 100%)
+      transition: 0.3s
+      &:hover
+        box-shadow: 0px 0px 31px 3px #df5950
+    
+.students
+  width: 20%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  gap: 15px
+  div
+    display: flex
+    justify-content: space-between
+    p
+      opacity: 0.400
+      font-size: 16px
+      color: #fff
+      font-family: "Roboto"
+    span
+      font-size: 16px
+      color: #fff
+      font-weight: 700
+      font-family: "Roboto"
+
+.earned-by-students-content
+  width: 50%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  gap: 10px
+  .earned-by-students
+    width: 43%
+    display: flex
+    justify-content: space-between
+    p
+      opacity: 0.400
+      font-size: 16px
+      color: #fff
+      font-family: "Roboto"
+    span
+      font-size: 16px
+      color: #fff
+      font-weight: 700
+      font-family: "Roboto"
+  .line
+    width: 100%
+    height: 6px
+    background-color: #fff
+    span
+      display: block
+      width: 60%
+      height: 6px
+      background-image: linear-gradient(91deg, #df5950 0%, #451046 100%)
+  .price
+    display: flex
+    justify-content: space-between
+    p
+      opacity: 0.400
+      font-size: 16px
+      line-height: 24px
+      color: #fff
+      font-weight: 400
+      font-family: "Roboto"

@@ -1,0 +1,314 @@
+@import helpers/vars
+@import helpers/mixins
+
+.wrapper
+  width: 1300px
+  margin: auto
+
+.company-information-section
+  height: 100vh
+
+.company-information
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100vh
+
+  div
+    width: 45%
+
+  .info-title
+    font-size: 48px
+    line-height: 67px
+    color: #fff
+    font-weight: 700
+    font-family: "Roboto"
+    margin-bottom: 67px
+
+  .info
+    font-size: 16px
+    line-height: 26px
+    color: #fff
+    font-family: "Roboto"
+
+.section-name
+  padding: 0 110px
+  font-size: 48px
+  line-height: 67px
+  color: #fff
+  font-weight: 700
+  font-family: "Roboto"
+
+.fast-start
+  padding-bottom: 200px
+  .section-name
+    position: relative
+    margin-bottom: 60px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 78px
+      height: 78px
+      background: url(../img/half_circle.png)
+  .section-info
+    opacity: 0.502
+    font-size: 16px
+    line-height: 26px
+    color: #fff
+    font-family: "Roboto"
+    margin-bottom: 100px
+  .flex
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    .fast-start-block
+      width: 25%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .title
+        font-size: 36px
+        line-height: 50px
+        color: #fff
+        font-weight: 700
+        font-family: "Roboto"
+        margin-bottom: 30px
+      .info
+        opacity: 0.502
+        font-size: 14px
+        line-height: 22px
+        padding-right: 40px
+        color: #fff
+        font-weight: 400
+        font-family: "Roboto"
+      .line
+        width: 100%
+        background-image: linear-gradient(107deg, #c89afc 0%, #7c6afa 100%)
+        margin-bottom: 40px
+    .fast-start-block:nth-child(1)
+      .line
+        height: 80px
+    .fast-start-block:nth-child(2)
+      .line
+        height: 60px
+        background-image: linear-gradient(257deg, #c89afc 0%, #7c6afa 100%)
+    .fast-start-block:nth-child(3)
+      .line
+        height: 30px
+    .fast-start-block:nth-child(4)
+      .line
+        height: 10px
+        background-image: linear-gradient(268deg, #c89afc 0%, #7c6afa 100%)
+
+.get-profession
+  margin-bottom: 230px
+  .section-name
+    text-align: center
+    margin-bottom: 132px
+  .flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    div
+      text-align: center
+      padding: 0 19px
+      img
+        margin-bottom: 75px
+      .block-title
+        font-size: 24px
+        line-height: 34px
+        color: #fff
+        font-weight: 500
+        font-family: "Roboto"
+        margin-bottom: 40px
+      .info
+        font-size: 16px
+        line-height: 26px
+        color: #fff
+        font-family: "Roboto"
+
+.partners
+  .section-name
+    position: relative
+    margin-bottom: 100px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 78px
+      height: 78px
+      transform: rotate(180deg)
+      background: url(../img/half_circle.png)
+  table
+    width: 100%
+    height: 300px
+    border-collapse: collapse
+    margin-bottom: 245px
+    tr:last-child
+      td
+        border-bottom: none
+    td
+      border-right: 1.0000000000000009px solid #ffffff
+      border-bottom: 1.0000000000000009px solid #ffffff
+      text-align: center
+    td:last-child
+      border-right: none
+    
+.training-program-section
+  position: relative
+  padding-top: 140px
+  margin-bottom: 216px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 50%
+    width: 78px
+    height: 78px
+    transform: translate(-50%) rotate(135deg)
+    background: url(../img/half_circle.png)
+  .wrapper
+    text-align: center
+  .section-name
+    text-align: center
+    margin-bottom: 40px
+  .section-title
+    opacity: 0.502
+    font-size: 16px
+    line-height: 26px
+    color: #fff
+    font-weight: 400
+    font-family: "Roboto"
+    margin-bottom: 80px
+  .training-program
+    height: 80vh
+    display: flex
+    justify-content: center
+    position: relative
+    gap: 143px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 50%
+      width: 6px
+      height: 100%
+      background-image: linear-gradient(180deg, #c89afc 0%, #7c6afa 100%)
+    div
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: stretch
+    .training-program-left
+      justify-content: space-between
+      div
+        position: relative
+        p:first-child
+          opacity: 0.502
+          font-size: 14px
+          line-height: 22px
+          color: #ffffff
+          font-family: "Roboto"
+          margin-bottom: 27px
+          text-align: right
+        p:last-child
+          font-size: 18px
+          line-height: 29px
+          color: #fff
+          font-family: "Roboto"
+          text-align: right
+        &::before
+          content: ''
+          position: absolute
+          top: 50%
+          right: -73px
+          transform: translateY(-50%)
+          width: 40px
+          height: 1px
+          opacity: 0.302
+          background-color: #000
+          border: 1px solid #fff
+    .training-program-right
+      justify-content: space-around
+      div
+        position: relative
+        p:first-child
+          opacity: 0.502
+          font-size: 14px
+          line-height: 22px
+          color: #ffffff
+          font-family: "Roboto"
+          margin-bottom: 27px
+          text-align: left
+        p:last-child
+          font-size: 18px
+          line-height: 29px
+          color: #fff
+          font-family: "Roboto"
+          text-align: left
+        &::before
+          content: ''
+          position: absolute
+          top: 50%
+          left: -70px
+          transform: translateY(-50%)
+          width: 40px
+          height: 1px
+          opacity: 0.302
+          background-color: #000
+          border: 1px solid #fff
+
+.teachers-section
+  margin-bottom: 215px
+  .section-name
+    position: relative
+    margin-bottom: 120px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 78px
+      height: 78px
+      transform: rotate(-45deg)
+      background: url(../img/half_circle.png)
+  .teachers
+    display: flex
+    justify-content: space-around
+    div
+      text-align: center
+      img
+        margin-bottom: 50px
+      .name
+        font-size: 24px
+        line-height: 34px
+        color: #fff
+        font-weight: 500
+        font-family: "Roboto"
+        margin-bottom: 25px
+      .work
+        opacity: 0.800
+        font-size: 16px
+        line-height: 26px
+        color: #fff
+        font-family: "Roboto"
+        margin-bottom: 30px
+      a
+        display: inline-block
+        font-size: 16px
+        line-height: 24px
+        color: #fff
+        font-family: "Roboto"
+        text-decoration: none
+        padding: 10px 30px
+        border-radius: 22px
+        border: 1px solid #fff
+        transition: 0.3s
+        &:hover
+          background: #fff
+          color: #000
+@import  components/header
+@import  components/footer
